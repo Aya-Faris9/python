@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np 
+
+x=np.arange(0,10,.1)
+a=np.cos(x)
+b=np.sin(x)
+c=np.exp(x/10)
+d=np.exp(-x/10)
+plt.plot(x,a,'b-',label='cosine')
+plt.plot(x,b,'r--',label='sine')
+plt.plot(x,c,'g-',label='exp(+x)')
+plt.plot(x,d,'y-',linewidth=5,label='exp(-x)')
+plt.legend(loc='upperleft')
+plt.xlabel('xaxis')
+plt.xlabel('yaxis')
+plt.show()
